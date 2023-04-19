@@ -11,7 +11,7 @@ export class AuthModalComponent implements OnInit {
   constructor(private modal: ModalService) { }
 
   ngOnInit(): void {
-this.modal.register('auth')
+   this.modal.register('auth')
   }
 
 }
