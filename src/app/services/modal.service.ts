@@ -17,6 +17,9 @@ private modals: IModal[] = []
       visible: false
     })
   }
+  unregister(id:string) {
+   this.modals = this.modals.filter((el) => el.id !== id)
+  }
   isModalOpen(id: string): boolean {
    return !!this.modals.find(el => el.id === id)?.visible
   }
