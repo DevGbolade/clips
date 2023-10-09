@@ -14,6 +14,7 @@ import { AboutComponent } from './about/about.component'
 import { VideoRoutingModule } from './video/video-routing.module';
 import { ClipComponent } from './clip/clip.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     NotFoundComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     UserModule,
     AngularFireModule.initializeApp(environment.firebase),

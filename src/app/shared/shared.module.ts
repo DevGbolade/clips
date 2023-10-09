@@ -8,22 +8,21 @@ import { InputComponent } from './input/input.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AlertsComponent } from './alerts/alerts.component';
 import { EventBlockerDirective } from './directives/event-blocker.directive';
-// import { NgxMaskModule, IConfig } from 'ngx-mask'
+import { ClickEventEmitterDirective } from './directives/click-event-emitter.directive';
 
 @NgModule({
   imports: [
     CommonModule,
-    ReactiveFormsModule,
-    // NgxMaskModule.forRoot()
+    ReactiveFormsModule,    
     
   ],
   declarations: [
-    SharedComponent,
     ModalComponent,
     TabsContainerComponent,
     TabComponent,
     InputComponent,
     AlertsComponent,
+    ClickEventEmitterDirective,
     EventBlockerDirective,
     
   ],
@@ -32,7 +31,9 @@ import { EventBlockerDirective } from './directives/event-blocker.directive';
     TabsContainerComponent,
     TabComponent,
     InputComponent,
-    AlertsComponent
+    AlertsComponent,
+    ClickEventEmitterDirective,
+    EventBlockerDirective,
   ]
 })
 export class SharedModule { }

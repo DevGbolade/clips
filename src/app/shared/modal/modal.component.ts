@@ -10,7 +10,7 @@ export class ModalComponent implements OnInit, OnDestroy {
 
   @Input() modalID = ''
   constructor(public modal: ModalService, public el: ElementRef) { 
-    console.log(el)
+    // console.log(el)
   }
 
   ngOnInit() {
